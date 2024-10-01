@@ -51,7 +51,7 @@ function App() {
                     type='checkbox' 
                     checked={email.read}
                     onChange={
-                      (event) => {
+                      () => {
                         const newEmails = emails.slice();
                         newEmails[email.id -1 ].read = ! email.read;
                         setEmails(newEmails);
@@ -65,7 +65,7 @@ function App() {
                     type = 'checkbox' 
                     checked={email.starred}
                     onChange={
-                      (event) => {
+                      () => {
                         const newEmails = emails.slice();
                         newEmails[email.id -1 ].starred = ! email.starred;
                         setEmails(newEmails);

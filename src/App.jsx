@@ -18,14 +18,14 @@ function App() {
             // onClick={() => {}}
           >
             <span className="label">Inbox</span>
-            <span className="count">?</span>
+            <span className="count">{emails.filter(e => e.read).length}</span>
           </li>
           <li
             className="item"
             // onClick={() => {}}
           >
             <span className="label">Starred</span>
-            <span className="count">?</span>
+            <span className="count">{emails.filter(e => e.starred).length}</span>
           </li>
 
           <li className="item toggle">
